@@ -1,5 +1,14 @@
+import parseCommand from "./parser";
+import Command from "./types/Command";
+
 const kettle = () => {
-    console.log(process.argv.slice(2));
+    const cliArgs: string[] = process.argv.slice(2);
+
+    const cmd: Command = parseCommand(cliArgs);
+
+    console.log(`Action: ${cmd.action}, Params: ${cmd.params}`);
+
+
 }
 
 kettle();
