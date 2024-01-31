@@ -4,7 +4,9 @@
   "description": "A simple and elegant set of java build tools",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tsc",
+    "build": "nexe -i dist/kettle.js -o build/kettle --build --python=$(which python3) --verbose"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,9 @@
   },
   "homepage": "https://github.com/ReeseHatfield/kettle#readme",
   "devDependencies": {
+    "@types/node": "^20.11.13",
+    "nexe": "^4.0.0-rc.4",
     "typescript": "^5.3.3"
-  }
+  },
+  "bin": "./dist/kettle.js"
 }
