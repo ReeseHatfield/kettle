@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ReeseHatfield/kettle#readme",
   "devDependencies": {
+    "@types/glob": "^8.1.0",
     "@types/node": "^20.11.13",
     "nexe": "^4.0.0-rc.4",
     "typescript": "^5.3.3"
