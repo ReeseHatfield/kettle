@@ -18,7 +18,7 @@ const init = (args: string[]) => {
     const directories = ["lib", "src", "docs", "out", "build", "assets"];
 
     directories.forEach((subDir) => {
-        mkdirSync(dirName + "/" + subDir, {recursive: true});
+        mkdirSync(dirName + "/" + subDir, { recursive: true});
     })
 
     const buildKettleContent = {
