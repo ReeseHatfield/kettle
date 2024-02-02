@@ -1,5 +1,5 @@
 import { spawn } from 'child_process';
-import { readFile, readFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import glob from 'glob';
 
 /**

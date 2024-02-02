@@ -25,5 +25,8 @@
     "nexe": "^4.0.0-rc.4",
     "typescript": "^5.3.3"
   },
-  "bin": "./dist/kettle.js"
+  "bin": "./dist/kettle.js",
+  "dependencies": {
+    "path": "^0.12.7"
+  }
 }
